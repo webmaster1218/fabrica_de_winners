@@ -128,7 +128,9 @@ export default function Chat({ selectedAgent, theme }: ChatProps) {
   };
 
   useEffect(() => {
-    scrollToBottom();
+    if (messages.length > 0) {
+      scrollToBottom();
+    }
   }, [messages]);
 
   const clearChat = () => {
@@ -522,7 +524,14 @@ export default function Chat({ selectedAgent, theme }: ChatProps) {
 
         {isBlocked && (
           <div className="flex justify-center p-4">
-            <div className="bg-red-500/10 border border-red-500/20 text-red-400 text-[10px] font-bold uppercase tracking-widest px-6 py-4 rounded-2xl text-center w-full backdrop-blur-md">
+            <div
+              className="border text-[10px] font-bold uppercase tracking-widest px-6 py-4 rounded-2xl text-center w-full backdrop-blur-md"
+              style={{
+                backgroundColor: `${theme.primary}1A`,
+                borderColor: `${theme.primary}33`,
+                color: theme.primary
+              }}
+            >
               Has alcanzado el límite de 10 mensajes. <br />
               <span className="text-white/60 lowercase font-light mt-1 block">Por seguridad y demostración, el chat se ha bloqueado.</span>
             </div>

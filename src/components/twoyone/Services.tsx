@@ -90,10 +90,10 @@ const Services: React.FC = () => {
 
                             <div className="relative z-10">
                                 <div className={cn(
-                                    "w-16 h-16 rounded-2xl mb-8 flex items-center justify-center bg-gradient-to-br relative overflow-hidden",
+                                    "w-16 h-16 rounded-2xl mb-8 flex items-center justify-center bg-gradient-to-br relative",
                                     service.color
                                 )}>
-                                    <div className="absolute inset-0 bg-white/20 backdrop-blur-sm" />
+                                    <div className="absolute inset-0 bg-white/20 backdrop-blur-sm rounded-2xl" />
                                     <service.icon size={28} className="text-white relative z-10" />
                                 </div>
 

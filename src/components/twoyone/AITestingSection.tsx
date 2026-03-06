@@ -57,20 +57,29 @@ export default function AITestingSection() {
                         transition={{ duration: 0.5 }}
                         className="flex flex-col relative group rounded-[2.5rem] p-[2px] overflow-hidden"
                     >
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#2C8082]/10 via-transparent to-[#2C8082]/5 rounded-[2.5rem] pointer-events-none transition-opacity duration-700 group-hover:opacity-100 opacity-70"></div>
+                        <div className="absolute inset-0 rounded-[2.5rem] pointer-events-none transition-opacity duration-700 group-hover:opacity-100 opacity-70" style={{ background: `linear-gradient(to bottom right, ${saludTheme.primary}1A, transparent, ${saludTheme.primary}0D)` }}></div>
 
                         <div
-                            className="relative flex flex-col h-full bg-white/[0.02] backdrop-blur-2xl rounded-[2.4rem] border border-[#2C8082]/20 overflow-hidden shadow-2xl transition-all duration-500 group-hover:border-[#2C8082]/40 group-hover:bg-[#2C8082]/10"
+                            className="relative flex flex-col h-full bg-white/[0.02] backdrop-blur-2xl rounded-[2.4rem] border overflow-hidden shadow-2xl transition-all duration-500"
                             style={{
-                                boxShadow: `0 0 40px -10px ${saludTheme.primary}40`,
+                                borderColor: `${saludTheme.primary}33`,
                             } as React.CSSProperties}
                         >
                             {/* Header Section */}
                             <div className="p-6 sm:px-8 border-b border-white/5 bg-gradient-to-b from-white/5 to-transparent relative z-20">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center gap-4">
-                                        <div className="w-14 h-14 rounded-2xl bg-[#2C8082]/20 border border-[#2C8082]/30 flex items-center justify-center text-[#2C8082] shadow-lg shadow-[#2C8082]/20 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
-                                            <div className="absolute inset-0 bg-gradient-to-tr from-[#2C8082]/20 to-transparent"></div>
+                                        <div
+                                            className="w-14 h-14 rounded-2xl flex items-center justify-center relative overflow-hidden group-hover:scale-105 transition-transform duration-500 shadow-lg"
+                                            style={{
+                                                backgroundColor: `${saludTheme.primary}33`,
+                                                borderColor: `${saludTheme.primary}4D`,
+                                                borderWidth: '1px',
+                                                boxShadow: `0 8px 16px -4px ${saludTheme.primary}33`,
+                                                color: saludTheme.primary
+                                            }}
+                                        >
+                                            <div className="absolute inset-0 opacity-20" style={{ background: `linear-gradient(to top right, ${saludTheme.primary}, transparent)` }}></div>
                                             <Stethoscope size={28} className="relative z-10" />
                                         </div>
                                         <div>
@@ -78,19 +87,19 @@ export default function AITestingSection() {
                                             <p className="text-sm text-white/50 font-medium">Clínicas y Consultorios</p>
                                         </div>
                                     </div>
-                                    <div className="flex items-center gap-2 bg-[#2C8082]/10 px-3 py-1.5 rounded-full border border-[#2C8082]/20">
+                                    <div className="flex items-center gap-2 px-3 py-1.5 rounded-full border" style={{ backgroundColor: `${saludTheme.primary}1A`, borderColor: `${saludTheme.primary}33` }}>
                                         <span className="relative flex h-2.5 w-2.5">
-                                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#2C8082] opacity-75"></span>
-                                            <span className="relative inline-flex rounded-full bg-[#2C8082] h-2.5 w-2.5"></span>
+                                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75" style={{ backgroundColor: saludTheme.primary }}></span>
+                                            <span className="relative inline-flex rounded-full h-2.5 w-2.5" style={{ backgroundColor: saludTheme.primary }}></span>
                                         </span>
-                                        <span className="text-[11px] font-bold text-[#2C8082] uppercase tracking-wider hidden sm:inline-block">Activo</span>
+                                        <span className="text-[11px] font-bold uppercase tracking-wider hidden sm:inline-block" style={{ color: saludTheme.primary }}>Activo</span>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Chat Section */}
                             <div className="flex-1 p-2 sm:p-4 relative">
-                                <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#2C8082]/5 to-transparent pointer-events-none"></div>
+                                <div className="absolute inset-x-0 top-0 h-32 pointer-events-none" style={{ background: `linear-gradient(to bottom, ${saludTheme.primary}0D, transparent)` }}></div>
                                 <div className="relative z-10 h-full min-h-[500px]">
                                     <Chat selectedAgent="salud" theme={saludTheme} />
                                 </div>
@@ -106,20 +115,29 @@ export default function AITestingSection() {
                         transition={{ duration: 0.5, delay: 0.1 }}
                         className="flex flex-col relative group rounded-[2.5rem] p-[2px] overflow-hidden"
                     >
-                        <div className="absolute inset-0 bg-gradient-to-bl from-[#FF6B35]/10 via-transparent to-[#FF6B35]/5 rounded-[2.5rem] pointer-events-none transition-opacity duration-700 group-hover:opacity-100 opacity-70"></div>
+                        <div className="absolute inset-0 rounded-[2.5rem] pointer-events-none transition-opacity duration-700 group-hover:opacity-100 opacity-70" style={{ background: `linear-gradient(to bottom left, ${comidaTheme.primary}1A, transparent, ${comidaTheme.primary}0D)` }}></div>
 
                         <div
-                            className="relative flex flex-col h-full bg-white/[0.02] backdrop-blur-2xl rounded-[2.4rem] border border-[#FF6B35]/20 overflow-hidden shadow-2xl transition-all duration-500 group-hover:border-[#FF6B35]/40 group-hover:bg-[#FF6B35]/10"
+                            className="relative flex flex-col h-full bg-white/[0.02] backdrop-blur-2xl rounded-[2.4rem] border overflow-hidden shadow-2xl transition-all duration-500"
                             style={{
-                                boxShadow: `0 0 40px -10px ${comidaTheme.primary}40`,
+                                borderColor: `${comidaTheme.primary}33`,
                             } as React.CSSProperties}
                         >
                             {/* Header Section */}
                             <div className="p-6 sm:px-8 border-b border-white/5 bg-gradient-to-b from-white/5 to-transparent relative z-20">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center gap-4">
-                                        <div className="w-14 h-14 rounded-2xl bg-[#FF6B35]/20 border border-[#FF6B35]/30 flex items-center justify-center text-[#FF6B35] shadow-lg shadow-[#FF6B35]/20 relative overflow-hidden group-hover:scale-105 transition-transform duration-500">
-                                            <div className="absolute inset-0 bg-gradient-to-tr from-[#FF6B35]/20 to-transparent"></div>
+                                        <div
+                                            className="w-14 h-14 rounded-2xl flex items-center justify-center relative overflow-hidden group-hover:scale-105 transition-transform duration-500 shadow-lg"
+                                            style={{
+                                                backgroundColor: `${comidaTheme.primary}33`,
+                                                borderColor: `${comidaTheme.primary}4D`,
+                                                borderWidth: '1px',
+                                                boxShadow: `0 8px 16px -4px ${comidaTheme.primary}33`,
+                                                color: comidaTheme.primary
+                                            }}
+                                        >
+                                            <div className="absolute inset-0 opacity-20" style={{ background: `linear-gradient(to top right, ${comidaTheme.primary}, transparent)` }}></div>
                                             <Utensils size={28} className="relative z-10" />
                                         </div>
                                         <div>
@@ -127,19 +145,19 @@ export default function AITestingSection() {
                                             <p className="text-sm text-white/50 font-medium">Restaurantes y Entregas</p>
                                         </div>
                                     </div>
-                                    <div className="flex items-center gap-2 bg-[#FF6B35]/10 px-3 py-1.5 rounded-full border border-[#FF6B35]/20">
+                                    <div className="flex items-center gap-2 px-3 py-1.5 rounded-full border" style={{ backgroundColor: `${comidaTheme.primary}1A`, borderColor: `${comidaTheme.primary}33` }}>
                                         <span className="relative flex h-2.5 w-2.5">
-                                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FF6B35] opacity-75"></span>
-                                            <span className="relative inline-flex rounded-full bg-[#FF6B35] h-2.5 w-2.5"></span>
+                                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75" style={{ backgroundColor: comidaTheme.primary }}></span>
+                                            <span className="relative inline-flex rounded-full h-2.5 w-2.5" style={{ backgroundColor: comidaTheme.primary }}></span>
                                         </span>
-                                        <span className="text-[11px] font-bold text-[#FF6B35] uppercase tracking-wider hidden sm:inline-block">Activo</span>
+                                        <span className="text-[11px] font-bold uppercase tracking-wider hidden sm:inline-block" style={{ color: comidaTheme.primary }}>Activo</span>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Chat Section */}
                             <div className="flex-1 p-2 sm:p-4 relative">
-                                <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#FF6B35]/5 to-transparent pointer-events-none"></div>
+                                <div className="absolute inset-x-0 top-0 h-32 pointer-events-none" style={{ background: `linear-gradient(to bottom, ${comidaTheme.primary}0D, transparent)` }}></div>
                                 <div className="relative z-10 h-full min-h-[500px]">
                                     <Chat selectedAgent="comida" theme={comidaTheme} />
                                 </div>

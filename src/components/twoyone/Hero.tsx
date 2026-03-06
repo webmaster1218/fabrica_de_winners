@@ -57,12 +57,14 @@ const Hero: React.FC = () => {
               <ArrowRight size={20} />
             </motion.a>
             <motion.a
-              href="#contacto"
+              href="https://wa.me/573244887171?text=Hola%20Fabrica%20de%20Winners,%20vengo%20desde%20la%20web%20y%20quiero%20una%20consultor%C3%ADa."
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.02, backgroundColor: "rgba(255,255,255,0.05)" }}
               whileTap={{ scale: 0.98 }}
               className="h-14 px-10 rounded-2xl border border-white/15 text-white text-base font-bold transition-all flex items-center justify-center gap-2"
             >
-              Consultoría Gratis
+              Consultoría
               <Calendar size={18} />
             </motion.a>
           </div>

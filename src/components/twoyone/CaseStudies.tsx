@@ -26,7 +26,7 @@ const CaseStudies: React.FC = () => {
       id: '02',
       category: 'Hospitalidad & Turismo',
       title: 'La Juana Cerro Tusa',
-      growth: 'Cero Duplicidades',
+      growth: 'Gestión Directa',
       description: 'Aplicativo web que conecta un panel administrativo con calendario interactivo, sincronizado automáticamente con plataformas de alojamiento como Airbnb, Booking.com y Vrbo, permitiendo gestionar la disponibilidad en tiempo real y evitar duplicidades en las reservas. La plataforma se complementa con optimización posicionamiento web, analítica avanzada y herramientas de marketing digital, publicidad enfocados en maximizar las conversiones.',
       stats: [
         { label: 'Sincronización', value: '100%' },
@@ -106,9 +106,6 @@ const CaseStudies: React.FC = () => {
                 <div className="absolute -inset-4 bg-gradient-to-tr from-blue-500/20 to-purple-500/20 rounded-[3rem] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                 <div className="relative rounded-[2.5rem] overflow-hidden border border-white/10 aspect-[4/3]">
                   <img src={c.image} alt={c.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                  <div className="absolute top-8 left-8 p-4 rounded-2xl bg-black/60 backdrop-blur-md border border-white/10">
-                    <span className="text-white font-bold text-xl">{c.growth}</span>
-                  </div>
                 </div>
               </motion.div>
 
