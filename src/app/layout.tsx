@@ -14,8 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FABRICA DE WINNERS",
-  description: "Plataforma de chat y analytics con asistente virtual",
+  title: "Fábrica de Winners | Tecnología y Estrategia para Escalar Negocios",
+  description: "En Fábrica de Winners creamos tecnología, sistemas y estrategias para construir negocios que escalan sin límites. Automatización, inteligencia artificial y crecimiento digital.",
+  icons: {
+    icon: "/images/icono-fabrica-winners.png",
+  },
 };
 
 export default function RootLayout({
@@ -45,7 +48,7 @@ export default function RootLayout({
             `,
           }}
         />
-        </head>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning

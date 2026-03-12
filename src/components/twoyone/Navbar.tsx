@@ -37,10 +37,14 @@ const Navbar: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="flex items-center gap-2 group cursor-pointer"
+          className="flex items-center gap-3 group cursor-pointer"
         >
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-purple-600 flex items-center justify-center text-white shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform">
-            <Infinity size={24} />
+          <div className="w-12 h-12 flex items-center justify-center transition-transform group-hover:scale-110">
+            <img 
+              src="/images/icono-fabrica-winners-sin-fondo.png" 
+              alt="Fábrica de Winners Logo" 
+              className="w-full h-full object-contain"
+            />
           </div>
           <span className="text-xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60">
             FABRICA DE WINNERS

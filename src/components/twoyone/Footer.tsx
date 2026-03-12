@@ -9,9 +9,13 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-8">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-purple-600 flex items-center justify-center text-white">
-                <Infinity size={24} />
+            <div className="flex items-center gap-3 mb-8">
+              <div className="w-12 h-12 flex items-center justify-center">
+                <img 
+                  src="/images/icono-fabrica-winners-sin-fondo.png" 
+                  alt="Fábrica de Winners Logo" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <span className="text-2xl font-bold tracking-tighter">FABRICA DE WINNERS</span>
             </div>
