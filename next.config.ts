@@ -39,6 +39,10 @@ const nextConfig = {
         source: '/(.*)',
         headers: [
           {
+            key: 'Cache-Control',
+            value: 'public, s-maxage=300, stale-while-revalidate=60',
+          },
+          {
             key: 'X-Frame-Options',
             value: 'DENY',
           },
@@ -49,6 +53,15 @@ const nextConfig = {
           {
             key: 'Referrer-Policy',
             value: 'origin-when-cross-origin',
+          },
+        ],
+      },
+      {
+        source: '/_next/static/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
           },
         ],
       },
