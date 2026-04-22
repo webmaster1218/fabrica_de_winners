@@ -2,6 +2,7 @@
 import React from 'react';
 import { Calendar, ArrowRight, Music, Activity, BarChart2, Users, Sparkles } from 'lucide-react';
 import { motion } from 'motion/react';
+import Image from 'next/image';
 
 const Hero: React.FC = () => {
   return (
@@ -103,7 +104,14 @@ const Hero: React.FC = () => {
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
               className="absolute top-1/4 left-1/4 w-72 h-80 rounded-[2.5rem] bg-gradient-to-br from-[#0064e0] to-[#6b2c91] p-8 shadow-2xl z-20 border border-white/20 backdrop-blur-sm"
             >
-              <img src="https://diariobitcoin.b-cdn.net/wp-content/uploads/2021/10/meta_logo_press_kit.jpg" alt="Meta" className="h-10 object-contain " />
+              <Image 
+                src="https://diariobitcoin.b-cdn.net/wp-content/uploads/2021/10/meta_logo_press_kit.jpg" 
+                alt="Meta" 
+                width={160} 
+                height={40} 
+                className="h-10 w-auto object-contain mb-6" 
+                priority
+              />
               <div className="space-y-6">
                 <div>
                   <p className="text-white/60 text-[10px] uppercase tracking-widest font-bold mb-1">ROAS Actual</p>
@@ -130,7 +138,12 @@ const Hero: React.FC = () => {
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
               className="absolute top-10 right-10 w-56 h-56 rounded-3xl bg-white p-6 shadow-2xl z-10 flex flex-col justify-between"
             >
-              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" className="w-10 h-10" />
+              <Image 
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" 
+                alt="Google" 
+                width={40} 
+                height={40} 
+              />
               <div>
                 <p className="text-black/40 text-[10px] uppercase tracking-widest font-bold mb-1">Anuncios de Búsqueda</p>
                 <p className="text-2xl font-bold text-black">Top 1%</p>

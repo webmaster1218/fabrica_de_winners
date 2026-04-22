@@ -4,9 +4,6 @@ const nextConfig = {
   turbopack: {
     root: process.cwd(),
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -30,6 +27,14 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'n8n.vivefelizsindolor.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'diariobitcoin.b-cdn.net',
+      },
+      {
+        protocol: 'https',
+        hostname: 'upload.wikimedia.org',
       }
     ],
   },

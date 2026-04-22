@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /login
+Disallow: /api
+Disallow: /_next/
+
+Sitemap: https://fabricadewinners.com/sitemap.xml

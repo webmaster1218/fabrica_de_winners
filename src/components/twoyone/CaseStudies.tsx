@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, CheckCircle2, TrendingUp, Users, Target } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 const CaseStudies: React.FC = () => {
   const cases = [
@@ -105,7 +106,12 @@ const CaseStudies: React.FC = () => {
               >
                 <div className="absolute -inset-4 bg-gradient-to-tr from-blue-500/20 to-purple-500/20 rounded-[3rem] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                 <div className="relative rounded-[2.5rem] overflow-hidden border border-white/10 aspect-[4/3]">
-                  <img src={c.image} alt={c.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <Image 
+                    src={c.image} 
+                    alt={`Proyecto: ${c.title} - ${c.category}`} 
+                    fill
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                  />
                 </div>
               </motion.div>
 
